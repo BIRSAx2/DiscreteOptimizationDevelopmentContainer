@@ -24,6 +24,11 @@ To utilize this development container, ensure you have Visual Studio Code instal
 
 3. When prompted, reopen the repository in the development container. Alternatively, use the command palette (`Ctrl/Cmd + Shift + P`) and select `Remote-Containers: Reopen in Container`.
 
+### Utilizing the Docker Image Independently of VS Code
+
+Navigate to the `.devcontainer` and execute `docker build -t <image-name> .` to construct the Docker image. Following this, initiate the container by running `docker run -it <image-name>`.
+To install the pyscipopt library, use the command `python3 -m pip install pyscipopt`.
+
 ### Running the Example Script
 
 The `basic_model.py` script included in this repository serves as a demonstration of the functioning environment within the development container. It showcases the successful integration and operation of the installed libraries by solving a simple optimization problem.
